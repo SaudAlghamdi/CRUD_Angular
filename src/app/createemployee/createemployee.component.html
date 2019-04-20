@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="assets/icons/favicon.ico"/>	
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic" data-tilt>
+					<img src="assets/img-01.png" alt="IMG">
+				</div>
+
+				<form class="login100-form" #employee="ngForm" (ngSubmit)="createEmployee(employee)">
+					<span class="login100-form-title">
+						Create Employee Profile
+					</span>
+
+					<div class="wrap-input100 " >
+						<input class="input100" type="text" id ="firstName" name="firstName" placeholder="Employee First Name" ngModel required #firstName="ngModel">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100" >
+						<input class="input100" type="text" id= "lastName" name="lastName" placeholder="Employee Last Name" ngModel required #lastName="ngModel">
+						<span class="focus-input100"></span>
+					</div>
+          
+          <div class="wrap-input100" >
+              <input class="input100" type="text" id= "city" name="city" placeholder="Employee City" ngModel required #city="ngModel">
+              <span class="focus-input100"></span>
+            </div>
+            
+            <div class="wrap-input100" >
+                <input class="input100" type="text" id= "salary" name="salary" placeholder="Employee Salary" ngModel required #salary="ngModel">
+                <span class="focus-input100"></span>
+              </div> 
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit" >
+							Save
+						</button>
+					</div>
+        </form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
